@@ -45,8 +45,8 @@ Install Rasa on your machine. Here is a great [installation guide](https://rasa.
 
 #### Train NLU model
 
-Then go to the directory of your applciation (cloned on the previous step) and make some changes in the model.
-Please refere to the [Rasa documentaion](https://rasa.com/docs/rasa/user-guide/rasa-tutorial/) to learn how to build and evaluate NLU model.
+Then go to the directory of your application (cloned on the previous step) and make some changes in the model.
+Please refer to the [Rasa documentaion](https://rasa.com/docs/rasa/user-guide/rasa-tutorial/) to learn how to build and evaluate NLU model.
 
 _Please note that you don't have to run **rasa init** command once your template project is already cloned from Heroku._
 
