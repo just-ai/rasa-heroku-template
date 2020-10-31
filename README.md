@@ -48,13 +48,13 @@ Install Rasa on your machine. Here is a great [installation guide](https://rasa.
 Then go to the directory of your application (cloned on the previous step) and make some changes in the model.
 Please refer to the [Rasa documentaion](https://rasa.com/docs/rasa/user-guide/rasa-tutorial/) to learn how to build and evaluate NLU model.
 
-_Please note that you don't have to run **rasa init** command once your template project is already cloned from Heroku._
-
-_Also note that NLU server doesn't run any actions - it only runs your [NLU model](https://rasa.com/docs/rasa/nlu/using-nlu-only/). Thus you can use only **rasa train nlu** command._
+> Please note that you don't have to run **rasa init** command once your template project is already cloned from Heroku.
+Also note that NLU server doesn't run any actions - it only runs your NLU model. Thus you can use only **rasa train nlu** command.
 
 #### Evaluate changes
 
-To evaluate your changes on your local machine just run NLU server locally [as described here](https://rasa.com/docs/rasa/nlu/using-nlu-only/) and make some HTTP requests.
+To evaluate your changes on your local machine just run NLU server locally and make some HTTP requests to the [Rasa HTTP API endpoint](https://rasa.com/docs/rasa/http-api).
+You can also use [shell command](https://rasa.com/docs/rasa/command-line-interface#rasa-shell) to try your mddel without running a server.
 
 #### Push changes to Heroku
 
@@ -70,7 +70,4 @@ git push
 
 Heroku will automatically handle the changes, re-build NLU model and re-start the server.
 
-_Please note that locally trained NLU models won't be pushed to the Heroku repository._
-
-_Also note that your source code is not visible via Internet once Heroku hosts your Git repository in private zone._
-
+> Please note that locally trained NLU models won't be pushed to the Heroku repository.

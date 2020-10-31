@@ -1,3 +1,5 @@
+version: "2.0"
+
 intents:
   - greet
   - goodbye
@@ -6,14 +8,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-
-actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
-- utter_iamabot
 
 responses:
   utter_greet:
